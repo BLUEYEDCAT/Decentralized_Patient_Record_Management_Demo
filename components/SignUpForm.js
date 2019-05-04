@@ -37,7 +37,7 @@ class SignUpForm extends Component {
           Pphone : patientInfo.patientPhone,
           Pid : patientInfo.patientIndex,
         };
-}
+};
 
 
   onFileChange = async event => {
@@ -50,7 +50,7 @@ class SignUpForm extends Component {
     reader.onloadend = () => {
       this.setState({file : Buffer(reader.result)});
     };
-  }
+  };
 
   onSubmit = async event=> {
 
@@ -67,16 +67,6 @@ class SignUpForm extends Component {
     });
     this.setState({profilePic : result[0].hash});
 
-    {/*
-      await ipfs.files.add(this.state.file, (err,result) => {
-        if(err){
-          console.log(err);
-          return
-        }
-      console.log('profile hash ' + result[0].hash);
-      this.setState({profilePic : result[0].hash , continue : true});
-      });
-      */}
 
     this.setState({loading : true,visible : 'true'});
 
@@ -109,11 +99,6 @@ class SignUpForm extends Component {
         this.setState({loading : false,visible : 'false'});
       }
     }
-
-
-
-
-
 
 
 
@@ -288,7 +273,7 @@ class SignUpForm extends Component {
       </div>
     );
   }
-}
+};
 
 
 export default SignUpForm;

@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "dev": "npm build",
-    "build": "npm build",
-    "start": "node server/server.js -p $port"
+    "dev": "node server/server.js -p $port",
+    "start": "node server/server.js -p $port",
+    "prod_start": "NODE_ENV=production node server/server.js -p $port"
   },
   "author": "WU YICHEN",
   "license": "MIT",
@@ -28,7 +28,7 @@
     "web3": "^1.0.0-beta.35"
   },
   "engines": {
-  "node": "11.3.0",
-  "npm": "6.9.0"
+    "node": "11.3.0",
+    "npm": "6.9.0"
   }
 }

@@ -15,7 +15,6 @@ app.prepare().then( () => {
 
     createServer(handler).listen(port, (err) => {
       if (err) throw err;
-      console.log('the server is ready on port 4000');
-      console.log('please proceed to the browser and access localhost on port 4000');
+      console.log(`the server is ready on port ${port}`);
     });
 });
