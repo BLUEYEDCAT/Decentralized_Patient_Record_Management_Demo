@@ -26,6 +26,6 @@
     "truffle-hdwallet-provider": "0.0.3",
     "url-loader": "^1.1.2",
     "web3": "^1.0.0-beta.35"
-  },
+  }
 
 }
