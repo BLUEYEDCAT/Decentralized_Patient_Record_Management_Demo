@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "build": "npm build",
-    "start": "npm start -p $PORT"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p $PORT"
   },
   "author": "WU YICHEN",
   "license": "MIT",
